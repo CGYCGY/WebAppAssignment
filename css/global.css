@@ -11,19 +11,40 @@ div.nav_bar {
     cursor: default;
 }
 
-div.nav_bar ul {
-
-    text-align: right;
+div.nav_bar a {
     margin: 0;
     padding: 0;
 }
 
-div.nav_bar ul li {
+div.nav_bar a img {
+    max-width: 100%;
+    height: 30px;
+    /*margin: -15px -20px;*/
+    /*make the picture align to the middle of other words and not use middle as base*/
+    vertical-align: middle;
+    padding: 9px 15px;
+    /*float: left;*/
+    position: absolute;
+    /*clear: left;*/
+}
+
+div.nav_bar a img:hover {
+    background-color: #cecece;
+    /*vertical-align: top;*/
+    /*padding: 5px -11px;*/
+}
+
+div.nav_bar ul {
+    /*text-align: right;*/
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+ul.link li {
     list-style: none;
     display: inline-block;
     cursor: pointer;
-    /*border: 0 solid #a6a6a6;*/
-    /*float: right;*/
 }
 
 ul.link li a {
@@ -37,39 +58,47 @@ ul.link li a {
     padding: 15px 20px;
     position: relative;
     /*top: -12px;*/
-}
 
-ul.link li a img {
-    max-width: 100%;
-    height: 30px;
-    margin: -15px -20px;
-    /*make the picture align to the middle of other words and not use middle as base*/
-    vertical-align: middle;
-    padding: 9px 15px;
-    /*float: left;*/
-    position: absolute;
-    /*clear: left;*/
 }
 
 ul.link li a:hover {
     background-color: #cecece;
     /*border: 15px solid #cecece;*/
     /*border-left: 1px solid #cecece;*/
-    padding: 15px 20px;
+    /*padding: 15px 20px;*/
     /*position: relative;*/
     /*top: -12px;*/
 }
 
-ul.link li a img:hover {
-    background-color: #cecece;
-    vertical-align: middle;
-    /*padding: 5px -11px;*/
+div.nav_menu {
+    display: none;
 }
 
 .stick_left {
     float: left;
     clear: left;
-    /*padding: 5px -11px;*/
+}
+
+.m1, .m2, .m3 {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.trans .m1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.trans .m2 {
+    opacity: 0;
+}
+
+.trans .m3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .clear_fix:before, .clear_fix:after { content: ""; display: table; }
