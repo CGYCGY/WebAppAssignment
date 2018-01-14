@@ -1,0 +1,43 @@
+/*body .global-header a.header-link, body .global-header button.header-link {*/
+.glob_header{
+    display: flex;
+    display: -webkit-flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.header_button{
+    display: inline-block;
+    color: #45494E;
+    border-left: 1px solid #EFF2F5;
+    padding: 22px 20px 19px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.header_blank{
+    -webkit-flex-grow: 10;
+    flex-grow: 10;
+    background-color: #acacac;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */

@@ -1,0 +1,77 @@
+html, body, ul {
+    /*remove white space around the border*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+div.nav_bar {
+    background-color: #a6a6a6;
+    /*padding: 0 20px;*/
+    cursor: default;
+}
+
+div.nav_bar ul {
+
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+div.nav_bar ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    /*border: 0 solid #a6a6a6;*/
+    /*float: right;*/
+}
+
+ul.link li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    /*border: 15px solid #a6a6a6;*/
+    color: #FFFFFF;
+    border-left: 1px solid #a6a6a6;
+    padding: 15px 20px;
+    position: relative;
+    /*top: -12px;*/
+}
+
+ul.link li a img {
+    max-width: 100%;
+    height: 30px;
+    margin: -15px -20px;
+    /*make the picture align to the middle of other words and not use middle as base*/
+    vertical-align: middle;
+    padding: 9px 15px;
+    /*float: left;*/
+    position: absolute;
+    /*clear: left;*/
+}
+
+ul.link li a:hover {
+    background-color: #cecece;
+    /*border: 15px solid #cecece;*/
+    /*border-left: 1px solid #cecece;*/
+    padding: 15px 20px;
+    /*position: relative;*/
+    /*top: -12px;*/
+}
+
+ul.link li a img:hover {
+    background-color: #cecece;
+    vertical-align: middle;
+    /*padding: 5px -11px;*/
+}
+
+.stick_left {
+    float: left;
+    clear: left;
+    /*padding: 5px -11px;*/
+}
+
+.clear_fix:before, .clear_fix:after { content: ""; display: table; }
+.clear_fix:after { clear: both; }
+.clear_fix { *zoom: 1; }
