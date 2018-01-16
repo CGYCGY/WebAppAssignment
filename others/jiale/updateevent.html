@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Welcome to update event function.</title>
+
+	</head>
+
+	<body>
+		<h1>Update Event</h1>
+		<h2>1. EVENT DETAILS</h2>
+
+		<br>
+
+		<form method="post" action="#" >
+			<label> EVENT TITLE*
+				<input type="text"
+					   name="event title"/>
+					   (Enter a short distinct name.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> LOCATION*
+				<input type="text"
+					   name="Locate"/>
+					   (Enter a short distinct of address.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> WEEK:
+				<input type="date"
+				/>
+				（From)
+			</label>
+
+			<label> WEEK:
+				<input type="date"
+				/>
+				(To)
+			</label>
+
+			<br>
+			<br>
+
+			<label> TIME:
+				<input type="time"/>
+				(hh:mm)
+				（From)
+			</label>
+
+			<label> TIME:
+				<input type="time"/>
+				(hh:mm)
+				(To)
+			</label>
+
+			<br>
+			<br>
+
+			<form action="#">
+				  <input type="file" name="pic" accept="image/*">
+				  <br>
+				  (We recommend using high pixel pictures to prevent unclear of the picture.)
+			</form>
+
+			<br>
+			<br>
+
+			<label> DESCRIPTION: *
+				<input type="text"
+					   name="Description"/>
+					   (Enter some short description.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> ORGANIZER NAME: *
+				<input type="text"
+					   name="OrganzerName"/>
+					   (Enter organizer name/company name)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<h1>2.Create Tickets</h1>
+			<h2>TICKET TYPE:</h2>
+			<select title="ticket_type">
+			  <option value="FreeTicket">FreeTicket</option>
+			  <option value="PaidTicket">PaidTicket</option>
+			  <option value="Donation">Donation</option>
+			</select>
+
+			<br>
+			<br>
+
+			<h1>Additional Settings</h1>
+			<h2>Show Remaining Tickets:</h2>
+
+			<label> Range:
+				5<input type="range"
+					min="0"
+					max="50"
+					value="6" />
+				</label>50
+
+				(Set the quantity of tickets you want)
+
+				<br>
+				<br>
+
+                    <input type="submit" value="Submit">
+        </form>
+
+	</body>
+
+</html>
