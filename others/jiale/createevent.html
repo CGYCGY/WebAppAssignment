@@ -16,8 +16,8 @@
 		<br>
 
 		<form method="post" action="#" >
-			<label> EVENT TITLE*
-				<input type="text"
+			<label> EVENT TITLE:*
+				<input type="text" placeholder="MMU Event"
 					   name="event title"/>
 					   (Enter a short distinct name.)
 				
@@ -26,8 +26,8 @@
 			<br>
 			<br>
 
-			<label> LOCATION*
-				<input type="text"
+			<label> LOCATION:*
+				<input type="text" placeholder="MMU"
 					   name="Locate"/>
 					   (Enter a short distinct of address.)
 				
@@ -76,7 +76,7 @@
 			<br>
 
 			<label> DESCRIPTION: *
-				<input type="text"
+				<input type="text" placeholder="This is an event about..."
 					   name="Description"/>
 					   (Enter some short description.)
 				
@@ -86,8 +86,8 @@
 			<br>
 
 			<label> ORGANIZER NAME: *
-				<input type="text"
-					   name="Description"/>
+				<input type="text" placeholder="SocialClub Malaysia"
+					   name="OrganizerName"/>
 					   (Enter organizer name/company name)
 				
 			</label>
@@ -95,8 +95,8 @@
 			<br>
 			<br>
 
-			<h1>2.Create Tickets</h1>
-			<h2>TICKET TYPE:</h2>
+			<h1>2.CREATE TICKETS</h1>
+			<h2>Ticket Type:</h2>
 			<select title="ticket_type">
 			  <option value="FreeTicket">FreeTicket</option>
 			  <option value="PaidTicket">PaidTicket</option>
@@ -106,17 +106,15 @@
 			<br>
 			<br>
 
-			<h1>3. Additional Settings</h1>
+			<h1>3. ADDITIONAL SETTINGS</h1>
 			<h2>Show Remaining Tickets:</h2>
 
-			<label> Range:
-				5<input type="range" 
-					min="0"
-					max="50"
-					value="6" />
-				</label>50
+            <label> Ticket numbers: *
+                <input type="text" placeholder="50/100/..."
+                       name="Ticket numbers"/>
+                (Set the quantity of tickets you want)
 
-				(Set the quantity of tickets you want)
+            </label>
 
 				<br>
 				<br>
