@@ -1,0 +1,30 @@
+.user_login {
+    background-color: darkgrey;
+    width: 200px;
+    height: 100px;
+    border: solid 2px lightgrey;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.login_selection_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 90px;
+    font-size: large;
+    font-family: Arial, sans-serif;
+
+    background-color: darkgrey;
+    width: 200px;
+    height: 100px;
+    border: solid 2px lightgrey;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+
+.login_warning_message {
+    font-size: x-small;
+    color: red;
+}
