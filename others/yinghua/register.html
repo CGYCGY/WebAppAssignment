@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="yh_style.css">
 </head>
 <body>
 
@@ -10,51 +11,71 @@
 <form id="registerForm">
     <div>
         <p>
+            <!--The username should only allow lower case and at least 5 characters, maximum 50 characters-->
             <label>
-                User name: <input type="text" placeholder="username" name="userName" required>
+                User name: <input type="text" placeholder="yinghua" validate="/^[a-z0-9_\-]{5,50}/" title="Please match the username format"name="userName" required>
+            </label>
+        </p>
+
+        <p class="login_warning_message">The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters. </p>
+
+        <p>
+            <label>
+                Password: <input type="password" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/" title="Please match the password format" name="password" required>
             </label>
         </p>
 
         <p>
             <label>
-                Password: <input type="password" placeholder="password" name="password" required>
+                Retype-Password: <input type="password" name="retypePassword" required>
+            </label>
+        </p>
+
+        <p class="login_warning_message">The password shall contain at least six characters long with uppercase and lowercase letter. </p>
+
+
+        <p>
+            <label>
+                First name: <input type="text" placeholder="Yinghua" validate="/[A-Za-z]/" title="uppercase and lowercase" name="firstName" required>
             </label>
         </p>
 
         <p>
             <label>
-                Retype-Password: <input type="password" placeholder="retype-password" name="retypePassword" required>
+                Last name: <input type="text" placeholder="Chai" validate="/[A-Za-z]/" title="uppercase and lowercase" name="lastName" required>
             </label>
         </p>
 
-        <p>
-            <label>
-                First name: <input type="text" placeholder="firstname" name="firstName" required>
-            </label>
-        </p>
+        <p class="login_warning_message">The names shall contain only uppercase and lowercase letter. </p>
+
 
         <p>
             <label>
-                Last name: <input type="text" placeholder="lastname" name="lastName" required>
-            </label>
-        </p>
-
-        <p>
-            <label>
-                Email Address: <input type="text" placeholder="email address" name="emailAddress" required>
+                Email Address: <input type="text" placeholder="sample@hotmail.com" validate="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" title="Please match email format" name="emailAddress" required>
             </label>
         </p>
 
         <p>
             <label>
                 <!-- To be implement validation for telephone -->
-                Telephone: <input type="text" placeholder="email address" name="emailAddress" required>
+                Telephone: +6<input type="text" placeholder="012-3465893" pattern="\d{3}-\d{7,8}" title="Please match the telephone format" name="emailAddress" required>
             </label>
         </p>
+
+        <p>
+            Register as :
+            <select name="register_choice">
+                <option value="user">User</option>
+                <option value="organizer">Organizer</option>
+            </select>
+        </p>
+
+
 
         <button type="submit" value="Register">Register</button>
     </div>
 </form>
+
 
 </body>
 </html>

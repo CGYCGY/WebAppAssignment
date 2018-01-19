@@ -1,4 +1,3 @@
-
 # auto_increment is used to form primary key for CRUD purpose
 CREATE TABLE admin (
   admin_id          INT         NOT NULL AUTO_INCREMENT UNIQUE,
