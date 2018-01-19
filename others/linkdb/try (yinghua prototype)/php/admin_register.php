@@ -10,9 +10,9 @@ if(!empty($_POST)) {
     $emailAddress = $_POST['emailAddress'];
     $telephone = $_POST['telephone'];
 
-    $query = 'INSERT INTO `user` (`username`, `password`, `first_name`, `last_name`, `email_address`, `telephone_number`) VALUES (?,?,?,?,?,?)';
+    $query = 'INSERT INTO `admin` (`username`, `password`, `first_name`, `last_name`, `email_address`, `telephone_number`) VALUES (?,?,?,?,?,?)';
     $param = array($userName, $password, $firstname, $lastname, $emailAddress, $telephone);
-        $result = dataQuery($query, $param);
+    $result = dataQuery($query, $param);
 
     // for testing
     echo 1 == $result ? 'Thanks for registering, ' . $userName : 'There has been a problem processing your request, please try again later.';
