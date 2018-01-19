@@ -9,7 +9,7 @@
 <body>
 
 <!-- Expected parameter to be developed in future: Action, Method -->
-<form id="loginForm">
+<form id="loginForm" name="login" action="php/user_login.php" method="post">
     <div>
         <p>
             <label>
@@ -20,11 +20,12 @@
         <p>
             <label>
                 <!-- To be implement validation and title for UX and assignment marks -->
-                Password: <input type="password" placeholder="password" name=" password" required>
+                Password: <input type="password" placeholder="password" name="pass" required>
             </label>
         </p>
 
-        <button type="submit" value="Login">Login</button>
+        <!--<button type="submit" value="Login">Login</button>-->
+        <input name="login" type="submit">
     </div>
 </form>
 </body>

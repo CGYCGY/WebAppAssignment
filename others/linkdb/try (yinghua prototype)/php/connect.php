@@ -31,7 +31,8 @@ function dataQuery($query, $param) {
         if($query_result != null && 'SELECT' == $query_type[0]) {
             $results = $query_result->fetchAll(PDO::FETCH_ASSOC);
             return $results;
-        } else {
+        }
+        else {
             return $query_result->rowCount();
         }
         $query_result = null; // first of the two steps to properly close
@@ -42,6 +43,6 @@ function dataQuery($query, $param) {
         echo $error_msg;
     }
 // return ntg back
-return null;
+//return null;
 }
 ?>

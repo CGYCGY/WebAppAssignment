@@ -3,7 +3,7 @@
 CREATE TABLE admin (
   admin_id          INT         NOT NULL AUTO_INCREMENT UNIQUE,
   username          VARCHAR(50) NOT NULL,
-  password          VARCHAR(50) NOT NULL,
+  password          TEXT NOT NULL,
   first_name        VARCHAR(30) NOT NULL,
   last_name         VARCHAR(30) NOT NULL,
   email_address     VARCHAR(50) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE admin (
 CREATE TABLE user (
   user_id           INT         NOT NULL AUTO_INCREMENT UNIQUE,
   username          VARCHAR(50) NOT NULL,
-  password          VARCHAR(50) NOT NULL,
+  password          TEXT NOT NULL,
   first_name        VARCHAR(30) NOT NULL,
   last_name         VARCHAR(30) NOT NULL,
   email_address     VARCHAR(50) NOT NULL,

@@ -11,10 +11,10 @@ if(!empty($_POST)) {
     $telephone = $_POST['telephone'];
 
     $query = 'INSERT INTO `user` (`username`, `password`, `first_name`, `last_name`, `email_address`, `telephone_number`) VALUES (?,?,?,?,?,?)';
-    $params = array($userName, $password, $firstname, $lastname, $emailAddress, $telephone);
-        $results = dataQuery($query, $params);
+    $param = array($userName, $password, $firstname, $lastname, $emailAddress, $telephone);
+        $result = dataQuery($query, $param);
 
-    // for testing only
-    echo 1 == $results ? 'Thanks for registering, ' . $userName : 'There has been a problem processing your request, please try again later.';
+    // for testing
+    echo 1 == $result ? 'Thanks for registering, ' . $userName : 'There has been a problem processing your request, please try again later.';
 }
 ?>
