@@ -7,12 +7,14 @@
 
     <!--Use Google CDN Jquery script for easier integration test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../controller/register/validation.js"></script>
     <script type="text/javascript" src="../controller/register/register.js"></script>
+
 
 <body>
 
 <!-- Expected parameter to be developed in future: Action on database, Method with GET or POST -->
-<form method="post" onsubmit="return validation()">
+<form method="post" id="registerForm" onsubmit="return validation()" action="#">
 <div>
     <p>
         <label>
@@ -74,11 +76,10 @@
         </select>
     </p>
 
-    <button type="submit" value="Register">Register</button>
+
+    <button type="submit" id="register">Register</button>
 </div>
 </form>
-
-
 
 </body>
 </html>
