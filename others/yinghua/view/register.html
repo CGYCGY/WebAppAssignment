@@ -12,74 +12,74 @@
 <body>
 
 <!-- Expected parameter to be developed in future: Action on database, Method with GET or POST -->
-<form id="registerForm">
-    <div>
-        <p>
-            <label>
-                User name: <input type="text" id="username" placeholder="yinghua" validate="/^[a-z0-9_\-]{5,50}/" title="Please match the username format"name="userName" required>
-            </label>
-        </p>
 
-        <button onClick="test()"></button>
+<div>
+    <p>
+        <label>
+            User name: <input type="text" id="username" placeholder="yinghua" name="username">
+        </label>
+    </p>
 
-        <p class="warning_message" hide>The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters. </p>
+    <p class="warning_message" id="user_warning" hide>The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters. </p>
 
-        <p>
-            <label>
-                Password: <input type="password" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/" title="Please match the password format" name="password"  >
-            </label>
-        </p>
+    <p>
+        <label>
+            Password: <input type="password" id="password" name="password" >
+        </label>
+    </p>
 
-        <p>
-            <label>
-                Retype-Password: <input type="password" name="retypePassword" >
-            </label>
-        </p>
+    <p>
+        <label>
+            Retype-Password: <input type="password" id="retypePassword" name="retypePassword" >
+        </label>
+    </p>
 
-        <p class="warning_message">The password shall contain at least six characters long with uppercase and lowercase letter. </p>
+    <p class="warning_message" id="password_warning"></p>
 
 
-        <p>
-            <label>
-                First name: <input type="text" placeholder="Yinghua" validate="/[A-Za-z]/" title="uppercase and lowercase" name="firstName"  >
-            </label>
-        </p>
+    <p>
+        <label>
+            First name: <input type="text" placeholder="Yinghua" validate="/[A-Za-z]/" title="uppercase and lowercase" name="firstName"  >
+        </label>
+    </p>
 
-        <p>
-            <label>
-                Last name: <input type="text" placeholder="Chai" validate="/[A-Za-z]/" title="uppercase and lowercase" name="lastName"  >
-            </label>
-        </p>
+    <p>
+        <label>
+            Last name: <input type="text" placeholder="Chai" validate="/[A-Za-z]/" title="uppercase and lowercase" name="lastName"  >
+        </label>
+    </p>
 
-        <p class="login_warning_message">The names shall contain only uppercase and lowercase letter. </p>
-
-
-        <p>
-            <label>
-                Email Address: <input type="text" placeholder="sample@hotmail.com" validate="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" title="Please match email format" name="emailAddress"  >
-            </label>
-        </p>
-
-        <p>
-            <label>
-                <!-- To be implement validation for telephone -->
-                Telephone: +6<input type="text" placeholder="012-3465893" pattern="\d{3}-\d{7,8}" title="Please match the telephone format" name="emailAddress"  >
-            </label>
-        </p>
-
-        <p>
-            Register as :
-            <select name="register_choice">
-                <option value="user">User</option>
-                <option value="organizer">Organizer</option>
-            </select>
-        </p>
+    <p class="login_warning_message">The names shall contain only uppercase and lowercase letter. </p>
 
 
+    <p>
+        <label>
+            Email Address: <input type="text" placeholder="sample@hotmail.com" validate="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" title="Please match email format" name="emailAddress"  >
+        </label>
+    </p>
 
-        <button type="submit" value="Register">Register</button>
-    </div>
-</form>
+    <p>
+        <label>
+            <!-- To be implement validation for telephone -->
+            Telephone: +6<input type="text" placeholder="012-3465893" pattern="\d{3}-\d{7,8}" title="Please match the telephone format" name="emailAddress"  >
+        </label>
+    </p>
+
+    <p>
+        Register as :
+        <select name="register_choice">
+            <option value="user">User</option>
+            <option value="organizer">Organizer</option>
+        </select>
+    </p>
+
+
+    <button onClick="test()">Test</button>
+
+    <button type="submit" value="Register">Register</button>
+</div>
+
+
 
 
 </body>
