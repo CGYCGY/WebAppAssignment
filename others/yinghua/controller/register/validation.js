@@ -124,18 +124,7 @@ function validate_telephone() {
 
 function registration_choice() {
     role = document.getElementById('role').value;
-    console.log(role);
-
-    if (role == 'organizer'){
-        console.log('Org');
-        document.getElementById("registerForm").action = "../model/PostOrganizer.php";
-    }
-    else if (role == 'user') {
-        console.log('User');
-        document.getElementById("registerForm").action = "../model/PostUser.php";
-    }
-
-    console.log('HERE');
+    document.getElementById("registerForm").action = (role === 'organizer') ? "../model/PostOrganizer.php" : "../model/PostUser.php";
     document.getElementById("registerForm").submit();
 
 }
