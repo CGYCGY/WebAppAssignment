@@ -12,25 +12,25 @@
 <body>
 
 <!-- Expected parameter to be developed in future: Action on database, Method with GET or POST -->
-
+<form method="post" onsubmit="return validation()">
 <div>
     <p>
         <label>
-            User name: <input type="text" id="username" placeholder="yinghua" name="username">
+            User name: <input type="text" id="username" placeholder="yinghua" name="username" required>
         </label>
     </p>
 
-    <p class="warning_message" id="user_warning" hide>The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters. </p>
+    <p class="warning_message" id="user_warning"></p>
 
     <p>
         <label>
-            Password: <input type="password" id="password" name="password">
+            Password: <input type="password" id="password" name="password" required>
         </label>
     </p>
 
     <p>
         <label>
-            Retype-Password: <input type="password" id="retypePassword" name="retypePassword" >
+            Retype-Password: <input type="password" id="retypePassword" name="retypePassword" required>
         </label>
     </p>
 
@@ -38,13 +38,13 @@
 
     <p>
         <label>
-            First name: <input type="text" id="firstname" placeholder="Yinghua" name="firstname">
+            First name: <input type="text" id="firstname" placeholder="Yinghua" name="firstname" required>
         </label>
     </p>
 
     <p>
         <label>
-            Last name: <input type="text" id="lastname" placeholder="Chai" name="lastname">
+            Last name: <input type="text" id="lastname" placeholder="Chai" name="lastname" required>
         </label>
     </p>
 
@@ -52,7 +52,7 @@
 
     <p>
         <label>
-            Email Address: <input type="text" id="email" placeholder="sample@hotmail.com" name="email">
+            Email Address: <input type="text" id="email" placeholder="sample@hotmail.com" name="email" required>
         </label>
     </p>
 
@@ -60,7 +60,7 @@
 
     <p>
         <label>
-            Telephone: +6<input type="text" id="telephone" placeholder="012-3465893" name="telephone"  >
+            Telephone: +6<input type="text" id="telephone" placeholder="012-3465893" name="telephone" required>
         </label>
     </p>
 
@@ -68,18 +68,15 @@
 
     <p>
         Register as :
-        <select name="register_choice">
+        <select name="register_choice" id="role">
             <option value="user">User</option>
             <option value="organizer">Organizer</option>
         </select>
     </p>
 
-
-    <button onClick="test()">Test</button>
-
     <button type="submit" value="Register">Register</button>
 </div>
-
+</form>
 
 
 

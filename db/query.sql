@@ -1,7 +1,7 @@
 # auto_increment is used to form primary key for CRUD purpose
 CREATE TABLE admin (
   admin_id          INT         NOT NULL AUTO_INCREMENT UNIQUE,
-  username          VARCHAR(50) NOT NULL,
+  username          TEXT NOT NULL,
   password          TEXT NOT NULL,
   first_name        VARCHAR(30) NOT NULL,
   last_name         VARCHAR(30) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE admin (
 
 CREATE TABLE user (
   user_id           INT         NOT NULL AUTO_INCREMENT UNIQUE,
-  username          VARCHAR(50) NOT NULL,
+  username          TEXT NOT NULL,
   password          TEXT NOT NULL,
   first_name        VARCHAR(30) NOT NULL,
   last_name         VARCHAR(30) NOT NULL,
