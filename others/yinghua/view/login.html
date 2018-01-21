@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Log In</title>
     <link rel="stylesheet" type="text/css" href="../style/app.css">
+    <link rel="stylesheet" type="text/css" href="../style/login.css">
+
+    <!--Use Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial|Roboto" rel="stylesheet">
 
     <!--Use Google CDN Jquery script for easier integration test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -12,38 +16,46 @@
 </head>
 <body>
 
+
+
 <form id="loginForm" method="get" onsubmit="return validation()">
-    <div>
-        <p>
+    <div id="container">
+
+        <h2>Event Management System Login</h2>
+        <div class="imgContainer">
+            <img src="../drawable/user-icon.png" alt="user_icon" class="userIcon">
+        </div>
+
+        <div class="detailContainer">
             <label>
-                User name <input type="text" id="username" placeholder="username" name="username" required>
+                <p>Username</p><input type="text" id="username" placeholder="Enter Username" name="username" required>
             </label>
-        </p>
 
-        <p>
             <label>
-                Password <input type="password" id="password" placeholder="password" name="password" required>
+                <p>Password</p><input type="password" id="password" placeholder="Enter Password" name="password" required>
             </label>
-        </p>
 
-        <p class="warning_message" id="login_warning"></p>
+            <label>
+                <p>Login as</p>
+            </label>
 
-        <p>
-            Login as
             <select name="login_choice" id="role">
-                <option value="user">User</option>
-                <option value="organizer">Organizer</option>
+            <option value="user">User</option>
+            <option value="organizer">Organizer</option>
             </select>
-        </p>
 
-        <button type="submit" id="login">Login</button>
+            <p>Do not have an account? <a href="register.html" style="color:darkblue"><b>Register Here.</b></a></p>
+
+            <button class="submitButton" type="submit" id="login">Login</button>
+
+
+        </div>
+
+
     </div>
+
+
 </form>
-
-<div>
-    <p>Do not have an account? <a href="register.html">Register here.</a></p>
-</div>
-
 </div>
 </body>
 </html>

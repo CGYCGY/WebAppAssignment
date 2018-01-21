@@ -1,25 +1,65 @@
-.user_login {
-    background-color: darkgrey;
-    width: 200px;
-    height: 100px;
-    border: solid 2px lightgrey;
-    margin-left: 40px;
-    text-decoration: none;
+form {
+    border: 3px solid deepskyblue;
+    width: 500px;
+    height: 735px;
+    margin: 0 auto;
 }
 
-.login_selection_element {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 90px;
+h2 {
+    text-align: center;
+    color: mediumblue;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: 1px 1px deepskyblue;
+    font-size: xx-large;
+}
+
+.imgContainer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.detailContainer {
+    font-family: 'Roboto', sans-serif;
+    color: mediumblue;
+    text-align: center;
+}
+
+img.userIcon {
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+}
+
+input[type=text], input[type=password], select {
+    width: 90%;
+    padding: 11px 15px;
+    display: inline-block;
+    border: 0.5px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+button {
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+    padding: 15px 23px;
+    margin: 7px 0;
+    /*border: none;*/
+    cursor: pointer;
+    width: 95%;
     font-size: large;
-    font-family: Arial, sans-serif;
-
-    background-color: darkgrey;
-    width: 200px;
-    height: 100px;
-    border: solid 2px lightgrey;
-    margin-left: 40px;
-    text-decoration: none;
-
 }
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    float: left;
+    padding-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
