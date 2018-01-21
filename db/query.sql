@@ -25,8 +25,10 @@ CREATE TABLE event (
   event_id          INT NOT NULL AUTO_INCREMENT UNIQUE,
   event_name        VARCHAR(80) NOT NULL,
   event_description VARCHAR(300) NOT NULL,
-  event_datetime    DATETIME DEFAULT NOW() NOT NULL
-
+  event_location    VARCHAR(300) NOT NULL,
+  event_org_name    VARCHAR(80) NOT NULL,
+  event_dt_start    DATETIME DEFAULT NOW() NOT NULL,
+  event_dt_end      DATETIME DEFAULT NOW() NOT NULL
 );
 
 # table belows use two keys to forms composite key for M-M relationships
