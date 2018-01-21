@@ -9,7 +9,7 @@ if(!empty($_POST)) {
     $result = dataQuery($query, $param);
 }
 
-$hash = $result[0]['password'];
+$hash = $result[0]['password' ];
 echo $hash;
 echo "\n";
 echo password_hash($password, PASSWORD_DEFAULT);
