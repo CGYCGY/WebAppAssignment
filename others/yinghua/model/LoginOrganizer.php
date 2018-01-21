@@ -8,7 +8,7 @@ $username = $_GET['username'];
 $password = $_GET['password'];
 
 
-function user_login($username, $password) {
+function admin_login($username, $password) {
 
 
     if(!CheckLoginInDB($username,$password))
@@ -23,7 +23,7 @@ function user_login($username, $password) {
 
 function CheckLoginInDB($username,$password)
 {
-    $query = "SELECT username, password FROM user WHERE username = '$username' AND password = '$password';";
+    $query = "SELECT username, password FROM admin WHERE username = '$username' AND password = '$password';";
     $result = returnDB($query);
 
     if(!$result || mysqli_num_rows($result) <= 0 ) {
@@ -37,7 +37,7 @@ function alert($msg) {
     echo "<script type='text/javascript'>alert('$msg');</script>";
 }
 
-if(user_login($username,$password))
+if(admin_login($username,$password))
 {
     header("Location: ../view/loginSuccess.html");
 }
