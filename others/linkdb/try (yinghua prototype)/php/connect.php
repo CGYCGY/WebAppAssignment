@@ -27,7 +27,11 @@ function dataQuery($query, $param) {
     // run the query
     try {
         $query_result = $connect->prepare($query);
-        $query_result->execute($param);
+        if($param != "") {
+            $query_result->execute($param);}
+        else {
+            $query_result->execute();
+        }
         if($query_result != null && 'SELECT' == $query_type[0]) {
             $results = $query_result->fetchAll(PDO::FETCH_ASSOC);
             return $results;
