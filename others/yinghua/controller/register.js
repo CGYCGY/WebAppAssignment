@@ -1,8 +1,8 @@
 $(function() {
     $('.warning_message').hide();
 
-    $('#register').click(function(){
 
+    $('#register').click(function(){
         if(validation()) {
             registration_choice();
         }
@@ -124,7 +124,7 @@ function validate_telephone() {
 
 function registration_choice() {
     role = document.getElementById('role').value;
-    document.getElementById("registerForm").action = (role === 'organizer') ? "../model/PostOrganizer.php" : "../model/PostUser.php";
+    document.getElementById("registerForm").action = (role === 'organizer') ? "../model/RegisterOrganizer.php" : "../model/RegisterUser.php";
     document.getElementById("registerForm").submit();
 
 }

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="../style/register.css">
+    <link rel="stylesheet" type="text/css" href="../style/app.css">
 
     <!--Use Google CDN Jquery script for easier integration test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../controller/register/validation.js"></script>
+    <script type="text/javascript" src="../controller/register.js"></script>
 
 <body>
 
 <!-- Expected parameter to be developed in future: Action on database, Method with GET or POST -->
-<form method="post" id="registerForm" onsubmit="return validation()" action="#">
+<form method="get" id="registerForm" onsubmit="return validation()">
 <div>
     <p>
         <label>
