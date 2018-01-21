@@ -3,27 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
-    <link rel="stylesheet" type="text/css" href="../style/login.css">
+    <link rel="stylesheet" type="text/css" href="../style/app.css">
+
+    <!--Use Google CDN Jquery script for easier integration test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../controller/login.js"></script>
+
 </head>
 <body>
 
-<!-- Expected parameter to be developed in future: Action, Method -->
-<form id="loginForm">
+<form id="loginForm" method="get" onsubmit="return validation()">
     <div>
         <p>
             <label>
-                User name: <input type="text" placeholder="username" name="username" required>
+                User name <input type="text" id="username" placeholder="username" name="username" required>
             </label>
         </p>
 
         <p>
             <label>
-                <!-- To be implement validation and title for UX and assignment marks -->
-                Password: <input type="password" placeholder="password" name=" password" required>
+                Password <input type="password" id="password" placeholder="password" name="password" required>
             </label>
         </p>
 
-        <button type="submit" value="Login">Login</button>
+        <p class="warning_message" id="login_warning"></p>
+
+        <p>
+            Login as
+            <select name="login_choice" id="role">
+                <option value="user">User</option>
+                <option value="organizer">Organizer</option>
+            </select>
+        </p>
+
+        <button type="submit" id="login">Login</button>
     </div>
 </form>
 

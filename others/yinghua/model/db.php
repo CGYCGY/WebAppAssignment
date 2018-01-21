@@ -9,6 +9,15 @@ function initDB($query) {
 
     mysqli_query($db, $query) or die ('Error ' . mysqli_error($db));
     mysqli_close($db);
+}
 
-    header("Location: ../view/login_selection.html");
+function returnDB($query) {
+
+    $db = mysqli_connect('localhost:3306','root','root','waadb')
+    or die('Error connecting to Web Assignment Database Server.');
+
+    $result = mysqli_query($db, $query) or die ('Error ' . mysqli_error($db));
+    mysqli_close($db);
+
+    return $result;
 }
