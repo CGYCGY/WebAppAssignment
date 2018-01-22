@@ -48,20 +48,20 @@ $(function () {
                         '\n' +
                         '\t\t\t<!--Left Side of div-->\n' +
                         '\t\t\t<div class="evt_box_left">\n' +
-                        '\t\t\t<br><p><img class="opacity" alt="Event Pic" src="https://vignette.wikia.nocookie.net/camphalfbloodroleplay/images/0/05/Doge.png"></p><br>\n' +
+                        '\t\t\t<br><div class="opacity"><img alt="Event Pic" src="https://vignette.wikia.nocookie.net/camphalfbloodroleplay/images/0/05/Doge.png"></div><br>\n' +
                         '\n' +
                         '\t\t\t<!--Event Description-->\n' +
-                        '\t\t\t<h2 class="arial">EVENT DESCRIPTION</h2>\n' +
+                        '\t\t\t<h2 class="arial">EVENT DESCRIPTION</h2><br>\n' +
                         '\t\t\t<p class="margin"><strong> \t'+eventList[n]['event_name']+':</strong><br> '+eventList[n]['event_description']+'</p>\n' +
                         '\n' +
                         '\t\t\t<!--Schedule-->\n' +
-                        '\t\t\t<h2 class="arial">CONTACT</h2>\n' +
+                        '\t\t\t<h2 class="arial">CONTACT</h2><br>\n' +
                         '\t\t\t<p><strong>Contact Organizer: '+eventList[n]['event_org_name']+':</strong>\n' +
                         '\t\t\t<br>Contact Number : '+eventList[n]['event_cont_num']+'<br>\n' +
                         '\t\t\t</p>\n' +
                         '\n' +
                         '\t\t\t<!--How to join-->\n' +
-                        '\t\t\t<h2 class="arial">HOW TO JOIN</h2>\n' +
+                        '\t\t\t<h2 class="arial">HOW TO JOIN</h2><br>\n' +
                         '\t\t\t<p>\n' +
                         '\t\t\t\tApply Ticket here: <button> Apply </button>\n' +
                         '\t\t\t</p>\n' +
