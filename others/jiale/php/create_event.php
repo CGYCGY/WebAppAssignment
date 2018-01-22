@@ -15,7 +15,7 @@ if(!empty($_POST)) {
     $result = dataQuery($query, $param);
 
     // for testing
-//    echo 1 == $result ? 'Event ' . $eName . ' has been created. ': 'There has been a problem processing your request, please try again later.';
-    echo json_encode($result);
+    echo 1 == $result ? 'Event ' . $eName . ' has been created. ': 'There has been a problem processing your request, please try again later.';
+//    echo json_encode($result);
 }
 ?>
