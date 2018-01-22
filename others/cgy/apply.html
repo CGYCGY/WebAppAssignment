@@ -2,11 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Apply Ticket</title>
+        <title>Apply for Ticket?</title>
+        <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+        <!--<script type="text/javascript" src="js/createTicket.js"></script>-->
     </head>
     <body>
-        <form action="browse.html">
-            <input type="submit" value="browse">
-        </form>
+        <div>Are you sure you want to apply ticket for this event?
+            <form id = "applyYN" action="php/create_ticket.php" method="post">
+                <input type="submit"   name = "backHome" value="no">
+                <input type="submit" name = "createTic" value="yes">
+            </form>
+        </div>
     </body>
 </html>

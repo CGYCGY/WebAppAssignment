@@ -13,11 +13,12 @@ $(function () {
         success: function(eventList)
         {
             var tempString = '';
-            var tempC = 1;
             //update html code
-            // $('#output').html("<b>name: </b>"+ename+"<b> desc: </b>"+edesc);
 
             for(var n = 0; n < eventList.length; n++) {
+                if(eventList[n]['event_name'] === 'ppp') {
+
+                }
                 if(tempC === 1) {
                     tempString += '<div class="browse_box">' +
                         '<div class="cover_p"><img src="resource/testpic1.jpg"/></div>';
@@ -34,9 +35,9 @@ $(function () {
                     tempC=1;
                 }
 
-                tempString += '<div class="flex_1"><b>Event Name: </b>'+eventList[n]['event_name']+'</div>' +
-                    '<div class="flex_1"><b>Event Description: </b>'+eventList[n]['event_description']+'</div>' +
-                    '<div class="flex_1"><b>Date & Time: </b>'+eventList[n]['event_datetime']+'</div>' +
+                tempString += '<div class="flex_2"><b>Event Name: </b>'+eventList[n]['event_name']+'</div>' +
+                    '<div class="flex_2"><b>Event Description: </b>'+eventList[n]['event_description']+'</div>' +
+                    '<div class="flex_2"><b>Date & Time: </b>'+eventList[n]['event_datetime']+'</div>' +
                     '<form action="apply.html">' +
                     '<input class="apply_tix" type="submit" value="Apply Ticket">' +
                     '</form>' +

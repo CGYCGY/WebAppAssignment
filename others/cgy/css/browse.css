@@ -28,7 +28,7 @@ div.browse_box {
 div.cover_p {
     /*border: 2px solid blue;*/
     margin: 10px;
-    flex: 3;
+    flex: 6;
 }
 
 div.cover_p img {
@@ -40,6 +40,10 @@ div.cover_p img {
 
 div.flex_1 {
     flex: 1;
+}
+
+div.flex_2 {
+    flex: 2;
 }
 
 input.apply_tix {
