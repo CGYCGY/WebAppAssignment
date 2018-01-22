@@ -44,11 +44,11 @@ function validate_username() {
     username = document.getElementById('username').value;
 
     if(!username_regex.test(username)){
-        $('#user_warning').text('The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters.').show();
+        $('#register_warning').text('The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters.').show();
         return false;
     }
     else {
-        $('#user_warning').hide();
+        $('#register_warning').hide();
         return true;
     }
 }
@@ -59,15 +59,15 @@ function validate_password() {
     var bln_pw = password_regex.test(password);
 
     if(!bln_pw){
-        $('#password_warning').text('The password shall contain at least eight characters long with uppercase, lowercase and numbers. ').show();
+        $('#register_warning').text('The password shall contain at least eight characters long with uppercase, lowercase and numbers. ').show();
         return false;
     }
     else if (password !== retype_pw) {
-        $('#password_warning').text('The retype password does not match with previous password value').show();
+        $('#register_warning').text('The retype password does not match with previous password value').show();
         return false;
     }
     else if (bln_pw && password === retype_pw){
-        $('#password_warning').hide();
+        $('#register_warning').hide();
         return true;
     }
 }
@@ -81,15 +81,15 @@ function validate_name() {
     var bln_lname = name_regex.test(last_name);
 
     if(!bln_fname){
-        $('#name_warning').text('The first name should only have alphabets.').show();
+        $('#register_warning').text('The first name should only have alphabets.').show();
         return false;
     }
     else if (!bln_lname){
-        $('#name_warning').text('The last name should only have alphabets.').show();
+        $('#register_warning').text('The last name should only have alphabets.').show();
         return false;
     }
     else if (bln_fname && bln_lname){
-        $('#name_warning').hide();
+        $('#register_warning').hide();
         return true;
     }
 }
@@ -99,11 +99,11 @@ function validate_email() {
     var bln_email = email_regex.test(email_address);
 
     if(!bln_email){
-        $('#email_warning').text('The email should be correct format.').show();
+        $('#register_warning').text('The email should be correct format.').show();
         return false;
     }
     else {
-        $('#email_warning').hide();
+        $('#register_warning').hide();
         return true;
     }
 }
@@ -113,11 +113,11 @@ function validate_telephone() {
     var bln_telephone = telephone_regex.test(telephone);
 
     if(!bln_telephone){
-        $('#telephone_warning').text('The telephone should be correct format.').show();
+        $('#register_warning').text('The telephone should be correct format.').show();
         return false;
     }
     else {
-        $('#telephone_warning').hide();
+        $('#register_warning').hide();
         return true;
     }
 }

@@ -14,46 +14,42 @@
     <script type="text/javascript" src="../controller/login.js"></script>
 
 </head>
-<body>
+    <body>
+    <div>
+        <form id="loginForm" method="get" onsubmit="return validation()">
+            <div id="container">
 
+                <h2>Event Management System Login</h2>
+                <div class="imgContainer">
+                    <img src="../drawable/user-icon.png" alt="user_icon" class="userIcon">
+                </div>
 
+                <div class="detailContainer">
+                    <label>
+                        <p>Username</p><input type="text" id="username" placeholder="Enter Username" name="username" required>
+                    </label>
 
-<form id="loginForm" method="get" onsubmit="return validation()">
-    <div id="container">
+                    <label>
+                        <p>Password</p><input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    </label>
 
-        <h2>Event Management System Login</h2>
-        <div class="imgContainer">
-            <img src="../drawable/user-icon.png" alt="user_icon" class="userIcon">
-        </div>
+                    <label>
+                        <p>Login as</p>
+                    </label>
 
-        <div class="detailContainer">
-            <label>
-                <p>Username</p><input type="text" id="username" placeholder="Enter Username" name="username" required>
-            </label>
+                    <select name="login_choice" id="role">
+                        <option value="user">User</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
 
-            <label>
-                <p>Password</p><input type="password" id="password" placeholder="Enter Password" name="password" required>
-            </label>
+                    <p>Do not have an account? <a href="register.html" style="color:darkblue"><b>Register Here</b></a></p>
 
-            <label>
-                <p>Login as</p>
-            </label>
+                    <button class="submitButton" type="submit" id="login">Login</button>
 
-            <select name="login_choice" id="role">
-            <option value="user">User</option>
-            <option value="organizer">Organizer</option>
-            </select>
-
-            <p>Do not have an account? <a href="register.html" style="color:darkblue"><b>Register Here</b></a></p>
-
-            <button class="submitButton" type="submit" id="login">Login</button>
-
-            <p class="warning_message" id="login_warning"></p>
-        </div>
+                    <p class="warning_message" id="login_warning"></p>
+                </div>
+            </div>
+        </form>
     </div>
-
-
-</form>
-</div>
-</body>
+    </body>
 </html>
