@@ -1,16 +1,10 @@
-form {
+
+.loginForm {
     border: 3px solid deepskyblue;
     width: 500px;
     height: 775px;
     margin: 0 auto;
-}
-
-h2 {
-    text-align: center;
-    color: mediumblue;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 1px 1px deepskyblue;
-    font-size: xx-large;
+    border-radius: 30px;
 }
 
 .imgContainer {
@@ -30,27 +24,6 @@ img.userIcon {
     border-radius: 50%;
 }
 
-input[type=text], input[type=password], select {
-    width: 90%;
-    padding: 11px 15px;
-    display: inline-block;
-    border: 0.5px solid #ccc;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-button {
-    background-color: cornflowerblue;
-    text-align: center;
-    color: white;
-    padding: 15px 23px;
-    margin: 7px 0;
-    /*border: none;*/
-    cursor: pointer;
-    width: 95%;
-    font-size: large;
-}
-
 .container {
     position: relative;
     width: 500px;
@@ -63,7 +36,4 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
-select {
-    background-color: white;
-}
 
