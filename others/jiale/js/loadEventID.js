@@ -2,7 +2,7 @@ $(function () {
     //use .ajax send http request
     $.ajax({
         //get table array in json format
-        url: 'php/createEvent.php',
+        url: 'php/show_event.php',
         //can insert url arguments here to pass to show_event.php
         //example: "id=5%name=111"
         data: "",
@@ -12,13 +12,18 @@ $(function () {
         //if show_event.php success
         success: function(eventList)
         {
-            var tempString = 'Event '+eventList[eventList.length-1]['event_name']+' has been created!';
+            var tempString = '';
+            //update html code
 
-            $('#eventLog').html(
+            for(var n = 0; n < eventList.length; n++) {
+                tempString += '<option value="'+eventList[n]['event_id']+'">'+
+                    eventList[n]['event_id']+'. '+eventList[n]['event_name']+'</option>';
+            }
+            console.log(tempString);
+            $('.eNameList').html(
                 tempString
             );
+
         }
     });
 });
-
-//NO USE DAO

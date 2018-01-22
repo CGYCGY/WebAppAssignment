@@ -19,7 +19,7 @@ $(function(){
         // handle the responses
         request.done(function(data) {
             // update the user
-            $('#response').html('Event has been created!');
+            $('#response').html('Success!!!');
         });
         request.fail(function(jqXHR, textStatus) {
             console.log(textStatus);
