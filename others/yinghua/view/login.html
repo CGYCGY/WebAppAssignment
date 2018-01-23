@@ -11,6 +11,9 @@
 
     <!--Use Google CDN Jquery script for easier integration test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Cookies -->
+    <script type="text/javascript" src="../controller/cookie.js"></script>
     <script type="text/javascript" src="../controller/login.js"></script>
 
 </head>
@@ -44,7 +47,7 @@
 
                     <p>Do not have an account? <a href="register.html" style="color:darkblue"><b>Register Here</b></a></p>
 
-                    <button class="submitButton" type="submit" id="login">Login</button>
+                    <button class="submitButton" type="submit" id="login" onclick="setCookie()">Login</button>
 
                     <p class="warning_message" id="login_warning"></p>
                 </div>
