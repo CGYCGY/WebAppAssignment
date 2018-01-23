@@ -1,8 +1,5 @@
-body {
-    color: red;
-}
-
-@media screen and (max-width: 730px) {
+/*nav bar*/
+@media screen and (max-width: 500px) {
     ul.link li {
         display: block;
         text-align: center;
@@ -32,5 +29,30 @@ body {
 
     ul.link_show {
         display: block;
+    }
+
+    .nav_box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*browse event*/
+@media screen and (max-width: 515px) {
+    div.browse_box {
+        width: 300px;
+        height: 460px;
+    }
+
+    .block-with-text {
+        max-height: 1.2em;
+    }
+}
+
+/*view event*/
+@media screen and (max-width:650px) {
+    #page-wrap{
+        flex-direction: column-reverse;
+        align-items: center;
     }
 }

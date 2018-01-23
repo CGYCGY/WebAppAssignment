@@ -18,7 +18,8 @@ div.nav_bar a {
 
 div.nav_bar a img {
     max-width: 100%;
-    height: 30px;
+    /*height: 30px;*/
+    height: 47px;
     /*margin: -15px -20px;*/
     /*make the picture align to the middle of other words and not use middle as base*/
     vertical-align: middle;
@@ -34,7 +35,7 @@ div.nav_bar a img:hover {
     /*padding: 5px -11px;*/
 }
 
-div.nav_bar ul {
+ul.link {
     /*text-align: right;*/
     margin: 0;
     padding: 0;
