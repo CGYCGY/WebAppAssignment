@@ -39,10 +39,10 @@ function alert($msg) {
 
 if(user_login($username,$password))
 {
-    header("Location: ../view/loginSuccess.html");
+    header("Location: ../view/logout.html");
 }
 else {
-    header("Location: ../view/loginSuccess.html");
+    header("Location: ../view/logout.html");
 }
 
 ?>
