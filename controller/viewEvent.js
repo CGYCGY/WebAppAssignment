@@ -66,7 +66,7 @@ $(function () {
                         tempString += '\t\t\t<!--How to join-->\n' +
                             '\t\t\t<h2 class="arial">HOW TO JOIN</h2><br>\n' +
                             '\t\t\t<p>\n' +
-                            '\t\t\t\tApply Ticket here: <button> Apply </button>\n' +
+                            '\t\t\t\tApply Ticket here: <a class="link_button" href="../view/apply.html">Apply</a>\n' +
                             '\t\t\t</p>\n' +
                             '\t\t\t</div>';
                     }

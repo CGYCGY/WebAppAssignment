@@ -43,7 +43,7 @@ $(function () {
                     '<input class="apply_tix" type="submit" value="View Event Details" onclick="saveID(this)">' +
                     '</form>' +
                     '<form action="apply.html">' +
-                    '<input class="apply_tix" type="submit" value="Apply Ticket">' +
+                    '<input class="apply_tix" type="submit" value="Apply Ticket" onclick="saveID(this)">' +
                     '</form>' +
                     '</div>';
             }
