@@ -10,7 +10,8 @@ var nav_c = '<!--navigation bar-->\n' +
     '                <div class="m3"></div>\n' +
     '            </div></div>\n' +
     '            <ul class="link">\n' +
-    '                <li><a href="#">Login/Register</a></li>\n' +
+    '                <li><a href="#">Create Event</a></li>\n' +
+    '                <li><a href="#">Update Event</a></li>\n' +
     '                <li><a href="#">About</a></li>\n' +
     '                <!--<li><a href="#">cccccc</a></li>-->\n' +
     '                <!--<li><a href="#">dddddd</a></li>-->\n' +
