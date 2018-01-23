@@ -44,10 +44,9 @@ $(function () {
                             '</form>'+
                             '\t\t\t\t<button class="no, btnlarger">NO! :D</button>\n' +
                             '\t\t\t  </div>\n' +
-                            '\n' +
                             '\t\t\t</div>\n' +
                             '\n'+
-                            '\t\t\t<script language="javascript" type="text/javascript" src="../script/modalBox.js"></script>\n';
+                            '\t\t\t<script language="javascript" type="text/javascript" src="../controller/modalBox.js"></script>\n';
                     }
                     tempString += '\t\t\t<!--Left Side of div-->\n' +
                         '\t\t\t<div class="evt_box_left">\n' +
