@@ -1,6 +1,6 @@
 $(function() {
-    $('.login_warning').hide();
-
+    removeCookies();
+    $('#login_warning').hide();
 
     $('#login').click(function(){
         if(validation()) {
@@ -15,10 +15,10 @@ var role;
 var username;
 var password;
 
-function getCookie(){
-    var name = Cookies.get('name');
-    var password = Cookies.get('password');
-    console.log(name + " " + password);
+
+function removeCookies() {
+    Cookies.remove('name');
+    Cookies.remove('password');
 }
 
 function validation() {
@@ -65,7 +65,7 @@ function validate_password() {
 
 function registration_choice() {
     role = document.getElementById('role').value;
-    document.getElementById("loginForm").action = (role === 'organizer') ? "../../model/login/LoginOrganizer.php" : "../login/LoginUser.php";
+    document.getElementById("loginForm").action = (role === 'organizer') ? "../../model/login/LoginOrganizer.php" : "../../model/login/LoginUser.php";
     document.getElementById("loginForm").submit();
 
 }

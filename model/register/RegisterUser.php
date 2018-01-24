@@ -20,7 +20,7 @@ function user_registration() {
 }
 
 user_registration();
-header("Location: ../view//login/login.html");
+header("Location: ../../view/login/login.html");
 
 
 ?>

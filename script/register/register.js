@@ -1,5 +1,5 @@
 $(function() {
-    $('.warning_message').hide();
+    $('#register_warning').hide();
 
 
     $('#register').click(function(){
@@ -124,7 +124,7 @@ function validate_telephone() {
 
 function registration_choice() {
     role = document.getElementById('role').value;
-    document.getElementById("registerForm").action = (role === 'organizer') ? "../model/register/RegisterOrganizer.php" : "../model/register/RegisterUser.php";
+    document.getElementById("registerForm").action = (role === 'organizer') ? "../../model/register/RegisterOrganizer.php" : "../../model/register/RegisterUser.php";
     document.getElementById("registerForm").submit();
 
 }

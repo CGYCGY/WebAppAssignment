@@ -20,7 +20,7 @@ function admin_registration() {
 }
 
 admin_registration();
-header("Location: ../view/login/login.html");
+header("Location: ../../view/login/login.html");
 
 ?>
 

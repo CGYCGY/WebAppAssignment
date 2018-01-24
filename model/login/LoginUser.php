@@ -8,6 +8,7 @@ $username = $_GET['username'];
 $password = $_GET['password'];
 
 
+
 function user_login($username, $password) {
 
 
@@ -38,7 +39,7 @@ if(user_login($username,$password))
     header("Location: ../../view/login/logout.html");
 }
 else {
-    header("Location: ../../view/login/logout.html");
+    header("Location: ../../view/login/login.html");
 }
 
 ?>
