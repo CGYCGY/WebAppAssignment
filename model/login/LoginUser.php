@@ -36,7 +36,7 @@ function CheckLoginInDB($username,$password)
 
 if(user_login($username,$password))
 {
-    header("Location: ../../view/login/logout.html");
+    header("Location: ../../view/browse.html");
 }
 else {
     header("Location: ../../view/login/login.html");
