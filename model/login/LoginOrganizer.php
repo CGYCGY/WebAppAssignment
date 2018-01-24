@@ -39,10 +39,10 @@ function alert($msg) {
 
 if(admin_login($username,$password))
 {
-    header("Location: ../view/login/logout.html");
+    header("Location: ../../view/login/logout.html");
 }
 else {
-    header("Location: ../view/login/logout.html");
+    header("Location: ../../view/login/logout.html");
 }
 
 ?>

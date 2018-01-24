@@ -65,7 +65,7 @@ function validate_password() {
 
 function registration_choice() {
     role = document.getElementById('role').value;
-    document.getElementById("loginForm").action = (role === 'organizer') ? "../model/login/LoginOrganizer.php" : "../model/login/LoginUser.php";
+    document.getElementById("loginForm").action = (role === 'organizer') ? "../../model/login/LoginOrganizer.php" : "../login/LoginUser.php";
     document.getElementById("loginForm").submit();
 
 }
