@@ -35,8 +35,8 @@ $(function () {
                     tempC=1;
                 }
 
-                tempString += '<div class="flex_2"><b>Event Name: </b>'+eventList[n]['event_name']+'</div>' +
-                    '<div class="flex_2"><b>Event Description: </b><nav class="block-with-text">'+eventList[n]['event_description']+'</nav></div>' +
+                tempString += '<div class="flex_1"><b>Event Name: </b><nav class="hide_extra_text">'+eventList[n]['event_name']+'</nav></div>' +
+                    '<div class="flex_2"><b>Event Description: </b><nav class="hide_extra_text">'+eventList[n]['event_description']+'</nav></div>' +
                     '<div class="flex_1"><b>Date & Time Start: </b>'+eventList[n]['event_dt_start']+'</div>' +
                     '<div class="flex_1"><b>Date & Time End: </b>'+eventList[n]['event_dt_end']+'</div>' +
                     '<form action="view_event.html">' +

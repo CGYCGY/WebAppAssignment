@@ -44,7 +44,7 @@
         height: 460px;
     }
 
-    .block-with-text {
+    .hide_extra_text {
         max-height: 1.2em;
     }
 }
