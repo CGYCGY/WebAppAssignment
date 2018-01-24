@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Success</title>
+
+    <!-- Cookies -->
+    <script type="text/javascript" src="../controller/cookie.js"></script>
+    <script>
+
+        function getCookie(){
+            var name = Cookies.get('name');
+            var password = Cookies.get('password');
+            console.log(name + " " + password);
+        }
+
+        function removeCookies() {
+            Cookies.remove('name');
+            Cookies.remove('password');
+            window.location.replace("../view/login.html")
+        }
+    </script>
+</head>
+
+<style>
+    button {
+        background-color: cornflowerblue;
+        text-align: center;
+        color: white;
+        padding: 15px 23px;
+        margin: 7px 0;
+        border: none;
+        cursor: pointer;
+        width: 20%;
+        font-size: large;
+        border-radius: 25px;
+    }
+</style>
+<body>
+
+    <p>Login Successful</p>
+
+    <button onclick="removeCookies()" href="../view/login.html">Sign out</button>
+    <button onclick="getCookie()">Retrieve Session</button>
+
+</body>
+</html>

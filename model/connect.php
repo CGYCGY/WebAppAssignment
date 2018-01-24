@@ -28,7 +28,7 @@ function dataQuery($query, $param) {
     try {
         $query_result = $connect->prepare($query);
         if($param != "") {
-        $query_result->execute($param);}
+            $query_result->execute($param);}
         else {
             $query_result->execute();
         }

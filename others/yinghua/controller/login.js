@@ -7,7 +7,6 @@ $(function() {
             registration_choice();
         }
     });
-
 });
 
 var username_regex = new RegExp('^[a-z0-9_\-]{5,50}');
@@ -15,6 +14,12 @@ var password_regex = new RegExp('^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])\\w{8,}$');
 var role;
 var username;
 var password;
+
+function getCookie(){
+    var name = Cookies.get('name');
+    var password = Cookies.get('password');
+    console.log(name + " " + password);
+}
 
 function validation() {
     var vld_user = validate_username();
@@ -63,4 +68,15 @@ function registration_choice() {
     document.getElementById("loginForm").action = (role === 'organizer') ? "../model/LoginOrganizer.php" : "../model/LoginUser.php";
     document.getElementById("loginForm").submit();
 
+}
+
+function setCookie() {
+    if (validation()){
+        Cookies.set('name', username);
+        Cookies.set('password', password);
+    }
+    else {
+        Cookies.remove('name');
+        Cookies.remove('password');
+    }
 }

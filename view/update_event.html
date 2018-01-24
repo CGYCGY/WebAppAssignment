@@ -5,12 +5,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Welcome to update event function.</title>
-		<script type="text/javascript" src="../../script/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/connect.js"></script>
-		<link rel="stylesheet" href="css/crenupdevent.css">
+		<script type="text/javascript" src="../controller/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../controller/connect.js"></script>
+		<script type="text/javascript" src="../controller/menuIcon.js"></script>
+		<link rel="stylesheet" href="../style/global_nav.css" />
+		<link rel="stylesheet" href="../style/cr_up_event.css">
 	</head>
 
 	<body>
+		<div class="nav_container">
+			<script language="javascript" type="text/javascript" src="../controller/nav_bar_admin.js"></script>
+		</div>
 
     <div id="page-wrap1">
 	<h2 id="response"></h2>
@@ -19,11 +24,11 @@
 
 	<br>
 
-	<form id="eventForm" name="CreateEvent" action="php/update_event.php" method="post" >
+	<form id="eventForm" name="CreateEvent" action="../model/update_event.php" method="post" >
 		<div>
 			<label> CHOOSE EVENT:*
 				<select name="eventID" class="eNameList">
-					<script language="javascript" type="text/javascript" src="js/loadEventID.js"></script>
+					<script language="javascript" type="text/javascript" src="../controller/loadEventID.js"></script>
 				</select>
 				(Choose the event you want to update.)
 
@@ -126,8 +131,8 @@
 	</form>
 
     </div>
-    <div id="bg2">
-        <img src="resource/backg.jpg" alt="">
+    <div id="bg">
+        <img src="../drawable/backg.jpg" alt="">
     </div>
 
 	</body>
