@@ -21,17 +21,17 @@ $(function () {
             for(var n = 0; n < eventList.length; n++) {
                 if(tempC === 1) {
                     tempString += '<div id="'+eventList[n]['event_id']+'" class="browse_box">' +
-                        '<div class="cover_p"><img src="../resources/testpic1.jpg"/></div>';
+                        '<div class="cover_p"><img src="../drawable/testpic1.jpg"/></div>';
                     tempC++;
                 }
                 else if(tempC === 2) {
                     tempString += '<div id="'+eventList[n]['event_id']+'" class="browse_box">' +
-                        '<div class="cover_p"><img src="../resources/testpic2.jpg"/></div>';
+                        '<div class="cover_p"><img src="../drawable/testpic2.jpg"/></div>';
                     tempC++;
                 }
                 else if(tempC === 3) {
                     tempString += '<div id="'+eventList[n]['event_id']+'" class="browse_box">' +
-                        '<div class="cover_p"><img src="../resources/testpic3.jpg"/></div>';
+                        '<div class="cover_p"><img src="../drawable/testpic3.jpg"/></div>';
                     tempC=1;
                 }
 
@@ -41,7 +41,10 @@ $(function () {
                     '<div class="flex_1"><b>Date & Time End: </b>'+eventList[n]['event_dt_end']+'</div>' +
                     '<form action="view_event.html">' +
                     '<input class="apply_tix" type="submit" value="View Event Details" onclick="saveID(this)">' +
-                    '</form>'+
+                    '</form>' +
+                    '<form action="apply.html">' +
+                    '<input class="apply_tix" type="submit" value="Apply Ticket" onclick="saveID(this)">' +
+                    '</form>' +
                     '</div>';
             }
 

@@ -44,10 +44,9 @@ $(function () {
                             '</form>'+
                             '\t\t\t\t<button class="no, btnlarger">NO! :D</button>\n' +
                             '\t\t\t  </div>\n' +
-                            '\n' +
                             '\t\t\t</div>\n' +
                             '\n'+
-                            '\t\t\t<script language="javascript" type="text/javascript" src="../script/modalBox.js"></script>\n';
+                            '\t\t\t<script language="javascript" type="text/javascript" src="../controller/modalBox.js"></script>\n';
                     }
                     tempString += '\t\t\t<!--Left Side of div-->\n' +
                         '\t\t\t<div class="evt_box_left">\n' +
@@ -67,7 +66,7 @@ $(function () {
                         tempString += '\t\t\t<!--How to join-->\n' +
                             '\t\t\t<h2 class="arial">HOW TO JOIN</h2><br>\n' +
                             '\t\t\t<p>\n' +
-                            '\t\t\t\tApply Ticket here: <button> Apply </button>\n' +
+                            '\t\t\t\tApply Ticket here: <a class="link_button" href="../view/apply.html">Apply</a>\n' +
                             '\t\t\t</p>\n' +
                             '\t\t\t</div>';
                     }

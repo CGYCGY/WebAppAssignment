@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Welcome to create event function.</title>
+        <script type="text/javascript" src="../controller/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../controller/connect.js"></script>
+		<script type="text/javascript" src="../controller/menuIcon.js"></script>
+		<link rel="stylesheet" href="../style/global_nav.css" />
+		<link rel="stylesheet" href="../style/cr_up_event.css">
+	</head>
+
+	<body>
+		<div class="nav_container">
+			<script language="javascript" type="text/javascript" src="../controller/nav_bar_admin.js"></script>
+		</div>
+
+		<div id="page-wrap1">
+        <h2 id="response"></h2>
+		<h1>Create An Event</h1>
+		<h2>1. EVENT DETAILS</h2>
+
+		<br>
+
+		<form id="eventForm" name="CreateEvent" action="../model/create_event.php" method="post" >
+			<div>
+			<label> EVENT NAME:*
+				<input type="text" placeholder="MMU Event"
+					   name="eventName"/>
+					   (Enter a short distinct name.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> LOCATION:*
+				<input type="text" placeholder="MMU"
+					   name="locate"/>
+					   (Enter a short distinct of address.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> (From) DATE AND TIME:
+				<input type="datetime-local"
+				name="dtS"/>
+			</label>
+
+            <br>
+            <br>
+
+			<label> (To) DATE AND TIME:
+				<input type="datetime-local"
+				name="dtE"/>
+			</label>
+
+			<br>
+			<br>
+
+			<!--<form action="#">-->
+				  <!--<input type="file" name="pic" accept="image/*">-->
+				  <!--<br>-->
+				  <!--(We recommend using high pixel pictures to prevent unclear of the picture.)-->
+			<!--</form>-->
+
+			<!--<br>-->
+			<!--<br>-->
+
+			<label> DESCRIPTION: *
+				<input type="text" placeholder="This is an event about..."
+					   name="description"/>
+					   (Enter some short description.)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<label> ORGANIZER NAME: *
+				<input type="text" placeholder="SocialClub Malaysia"
+					   name="organizerName"/>
+					   (Enter organizer name/company name)
+				
+			</label>
+
+			<br>
+			<br>
+
+			<!--<h1>2.CREATE TICKETS</h1>-->
+			<!--<h2>Ticket Type:</h2>-->
+			<!--<select title="ticket_type">-->
+			  <!--<option value="FreeTicket">FreeTicket</option>-->
+			  <!--<option value="PaidTicket">PaidTicket</option>-->
+			  <!--<option value="Donation">Donation</option>-->
+			<!--</select>-->
+
+			<!--<br>-->
+			<!--<br>-->
+
+			<!--<h1>3. ADDITIONAL SETTINGS</h1>-->
+			<!--<h2>Show Remaining Tickets:</h2>-->
+
+            <!--<label> Ticket numbers: *-->
+                <!--<input type="text" placeholder="50/100/..."-->
+                       <!--name="Ticket numbers"/>-->
+                <!--(Set the quantity of tickets you want)-->
+
+            <!--</label>-->
+
+				<!--<br>-->
+				<!--<br>-->
+
+				<input type="submit" value="create">
+            </div>
+        </form>
+		</div>
+
+		<div id="bg">
+			<img src="../drawable/backg.jpg" alt="">
+		</div>
+	</body>
+
+</html>
