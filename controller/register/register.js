@@ -1,8 +1,9 @@
 $(function() {
-    $('#register_warning').hide();
+    $('.warning_message').hide();
 
 
     $('#register').click(function(){
+        console.log(validation());
         if(validation()) {
             registration_choice();
         }
@@ -30,6 +31,8 @@ function validation() {
     var vld_email = validate_email();
     var vld_telephone = validate_telephone();
     var list = [vld_user, vld_password, vld_name, vld_email, vld_telephone];
+
+    console.log(vld_user + " " + vld_password + " " + vld_name + " " + vld_email + " " + vld_telephone);
 
     for (i = 0; i < list.length; i++){
         if (!list[i]){
