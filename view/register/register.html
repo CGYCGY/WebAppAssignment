@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../style/app.css">
+    <link rel="stylesheet" type="text/css" href="../style/register.css">
+
+    <!--Use Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial|Roboto" rel="stylesheet">
+
+    <!--Use Google CDN Jquery script for easier integration test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../controller/register.js"></script>
+
+<body>
+
+<!-- Expected parameter to be developed in future: Action on database, Method with GET or POST -->
+<form method="get" id="registerForm" onsubmit="return validation()">
+    <div class="detailContainer">
+        <h2>Account Registration</h2>
+        <label>
+            <span class="fontStyle">User name</span><input type="text" id="username" placeholder="At least 5 characters with only lowercase" name="username" required>
+        </label>
+
+        <label>
+            <span class="fontStyle">Password</span><input type="password" id="password" name="password" placeholder="At least 8 characters with uppercase, lowercase and numbers"required>
+        </label>
+
+        <label>
+            <span class="fontStyle">Retype-Password</span> <input type="password" id="retypePassword" name="retypePassword" placeholder="Match the password"required>
+        </label>
+
+        <label>
+            <span class="fontStyle">First name</span><input type="text" id="firstname" name="firstname" placeholder="Only alphabets" required>
+        </label>
+
+        <label>
+            <span class="fontStyle">Last name</span><input type="text" id="lastname" name="lastname" placeholder="Only alphabets" required>
+        </label>
+
+        <label>
+            <span class="fontStyle">Email Address</span><input type="text" id="email" placeholder="Email format: test@hotmail.com" name="email" required>
+        </label>
+
+        <label>
+            <span class="fontStyle">Telephone</span><input type="text" id="telephone" placeholder="Malaysia telephone format: 012-2345136" name="telephone" required>
+        </label>
+
+        <span class="fontStyle">Register as </span>
+        <select name="register_choice" id="role">
+            <option value="user">User</option>
+            <option value="organizer">Organizer</option>
+        </select>
+
+        <p class="warning_message" id="register_warning"></p>
+
+        <button type="submit" id="register">Register</button>
+    </div>
+</form>
+
+</body>
+</html>
