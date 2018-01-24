@@ -49,7 +49,7 @@ div.flex_2 {
     border: 10px solid transparent;
 }
 
-.block-with-text {
+.hide_extra_text {
     /*flex: 2;*/
     /* hide text if it more than N lines  */
     overflow: hidden;
@@ -67,7 +67,7 @@ div.flex_2 {
     padding-right: 1em;
     border-right: 20px solid transparent;
 }
-.block-with-text:before {
+.hide_extra_text:before {
     /* points in the end */
     content: '...';
     /* absolute position */
@@ -76,7 +76,7 @@ div.flex_2 {
     right: 0;
     bottom: 0;
 }
-.block-with-text:after {
+.hide_extra_text:after {
     /* points in the end */
     content: '';
     /* absolute position */
