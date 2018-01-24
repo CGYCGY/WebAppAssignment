@@ -45,9 +45,33 @@ function validation() {
 
 function validate_username() {
     username = document.getElementById('username').value;
+    console.log(username);
+    var checkname = true;
+
+    $.ajax({
+        url: '../../model/get_username_list.php',
+        data: "",
+        dataType: 'json',
+        async: false,
+        success: function(nameList) {
+            // nameList[i]['username']
+            for(var i = 0; i <nameList.length; i++) {
+                if(nameList[i]['username'] === username) {
+                    checkname = false;
+                    break;
+                }
+            }
+        }
+    });
+
+    console.log(checkname);
 
     if(!username_regex.test(username)){
         $('#register_warning').text('The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters.').show();
+        return false;
+    }
+    else if(!checkname) {
+        $('#register_warning').text('The username already exist, please choose another username.').show();
         return false;
     }
     else {
