@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="../../style/app/app.css">
+    <link rel="stylesheet" type="text/css" href="../../style/login/login.css">
+
+    <!--Use Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial|Roboto" rel="stylesheet">
+
+    <!--Use Google CDN Jquery script for easier integration test -->
+    <script type="text/javascript" src="../../script/jquery-3.2.1.min.js"></script>
+
+    <!-- Cookies -->
+    <script type="text/javascript" src="../../script/cookie/cookie.js"></script>
+    <script type="text/javascript" src="../../script/login/login.js"></script>
+
+</head>
+    <body>
+    <div>
+        <form id="loginForm" method="get" onsubmit="return validation()">
+            <div id="container">
+
+                <h2>Event Management System Login</h2>
+                <div class="imgContainer">
+                    <img src="../../resources/user-icon.png" alt="user_icon" class="userIcon">
+                </div>
+
+                <div class="detailContainer">
+                    <label>
+                        <p>Username</p><input type="text" id="username" placeholder="Enter Username" name="username" required>
+                    </label>
+
+                    <label>
+                        <p>Password</p><input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    </label>
+
+                    <label>
+                        <p>Login as</p>
+                    </label>
+
+                    <select name="login_choice" id="role">
+                        <option value="user">User</option>
+                        <option value="organizer">Organizer</option>
+                    </select>
+
+                    <p>Do not have an account? <a href="../register/register.html" style="color:darkblue"><b>Register Here</b></a></p>
+
+                    <p class="warning_message" id="login_warning"></p>
+
+                    <button class="submitButton" type="submit" id="login" onclick="setCookie()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>
