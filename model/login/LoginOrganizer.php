@@ -37,9 +37,8 @@ function alert($msg) {
     echo "<script type='text/javascript'>alert('$msg');</script>";
 }
 
-if(admin_login($username,$password))
-{
-    header("Location: ../../view/login/logout.html");
+if(admin_login($username,$password)) {
+    header("Location: ../../view/event_list.html");
 }
 else {
     header("Location: ../../view/login/login.html");

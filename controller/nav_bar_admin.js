@@ -13,7 +13,7 @@ var nav_c = '<!--navigation bar-->\n' +
     '                <li><a href="create_event.html">Create Event</a></li>\n' +
     '                <li><a href="update_event.html">Update Event</a></li>\n' +
     '                <li><a href="about.html">About</a></li>\n' +
-    '                <li><a href="#">Log Out</a></li>\n' +
+    '                <li><a onclick="removeCookies()">Log Out</a></li>\n' +
     '                <!--<li><a href="#">dddddd</a></li>-->\n' +
     '                <!--<li><a href="#">eeeeee</a></li>-->\n' +
     '            </ul>\n' +
@@ -23,3 +23,9 @@ var nav_c = '<!--navigation bar-->\n' +
 $('.nav_container').html(
     nav_c
 );
+
+function removeCookies() {
+    Cookies.remove('name');
+    Cookies.remove('password');
+    window.location.replace("../view/login/login.html")
+}
