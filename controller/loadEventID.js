@@ -2,7 +2,7 @@ $(function () {
     //use .ajax send http request
     $.ajax({
         //get table array in json format
-        url: '../model/show_event.php',
+        url: '../model/event_list_admin.php',
         //can insert url arguments here to pass to show_event.php
         //example: "id=5%name=111"
         data: "",

@@ -7,11 +7,12 @@ if(!empty($_POST)) {
     $eDesc = $_POST['description'];
     $eLoc = $_POST['locate'];
     $eOrgName = $_POST['organizerName'];
+    $OrgCon = $_POST['organizerCon'];
     $eDTStart = $_POST['dtS'];
     $eDTEnd = $_POST['dtE'];
 
-    $query = 'INSERT INTO `event` (`event_name`, `event_description`, `event_location`, `event_org_name`, `event_dt_start`, `event_dt_end`) VALUES (?,?,?,?,?,?)';
-    $param = array($eName, $eDesc, $eLoc, $eOrgName, $eDTStart, $eDTEnd);
+    $query = 'INSERT INTO `event` (`event_name`, `event_description`, `event_location`, `event_org_name`, `event_contact`, `event_dt_start`, `event_dt_end`) VALUES (?,?,?,?,?,?,?)';
+    $param = array($eName, $eDesc, $eLoc, $eOrgName, $OrgCon, $eDTStart, $eDTEnd);
     $result = dataQuery($query, $param);
 
     // for testing
