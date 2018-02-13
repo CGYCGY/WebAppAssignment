@@ -45,6 +45,14 @@ $(function () {
                         }
                         ticNum = 0;
                     }
+
+                    if(tempString === '') {
+                        tempString += '<p>\n' +
+                            '<br><b>You didn\'t apply for ticket for any event yet.<br>\n' +
+                            'Press home button to return to homepage.</b>\n' +
+                            '</p>';
+                    }
+
                     $('.view_container').html(
                         tempString
                     );

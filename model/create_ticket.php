@@ -13,8 +13,8 @@ include 'connect.php';
         $param = array($uname, $event_id);
         $result = dataQuery($query, $param);
 
-        echo 1 == $result ? 'Event ticket applied. ': 'There has been a problem processing your request, please try again later.';
-        header( "refresh:3;../view/browse.html" );
+        echo 1 == $result ? 'Event ticket applied. Page will be redirect shortly.': 'There has been a problem processing your request, please try again later.';
+        header( "refresh:2;../view/browse.html" );
 
     }
 
