@@ -6,15 +6,15 @@ include 'connect.php';
     }
     else if(isset($_POST['createTic'])) {
         $event_id = $_GET['event_id'];
-//        $acc_id = $_COOKIE['user_id'];
-        $acc_id = 1;
+        $uname = $_COOKIE['name'];
+//        $acc_id = 1;
 
-        $query = 'INSERT INTO `apply_ticket` (`user_id`, `event_id`) VALUES (?,?)';
-        $param = array($acc_id, $event_id);
+        $query = 'INSERT INTO `apply_ticket` (`user_id`, `event_id`) VALUES ((SELECT `user_id` FROM `user` WHERE `username` = ?),?)';
+        $param = array($uname, $event_id);
         $result = dataQuery($query, $param);
 
         echo 1 == $result ? 'Event ticket applied. ': 'There has been a problem processing your request, please try again later.';
-        header( "refresh:5;../view/browse.html" );
+        header( "refresh:3;../view/browse.html" );
 
     }
 

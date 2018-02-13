@@ -10,7 +10,7 @@ var nav_c = '<!--navigation bar-->\n' +
     '                <div class="m3"></div>\n' +
     '            </div></div>\n' +
     '            <ul class="link">\n' +
-    '                <li><a href="#">View Ticket</a></li>\n' +
+    '                <li><a href="view_ticket.html">View Ticket</a></li>\n' +
     '                <li><a href="about.html">About</a></li>\n' +
     '                <li><a onclick="removeCookies()">Log Out</a></li>\n' +
     '                <!--<li><a href="#">dddddd</a></li>-->\n' +
