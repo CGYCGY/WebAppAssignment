@@ -16,6 +16,22 @@ if(!empty($_POST)) {
 
     // for testing
     echo 1 == $result ? 'Event ' . $eName . ' has been created. ': 'There has been a problem processing your request, please try again later.';
+    echo "\r\n";
 //    echo json_encode($result);
+
+    if(!isset($_COOKIE["name"])) {
+        echo "Cookie (name) is missing!";
+        echo "\r\n";
+    }
+    else {
+        echo "Cookie value is: " . $_COOKIE["name"];
+        echo "\r\n";
+
+        $query = 'INSERT INTO `create_event` (`admin_id`, `event_id`) VALUES ((SELECT `admin_id` FROM `admin` WHERE `username` = ?),(SELECT MAX(event_id) FROM `event`))';
+        $param = array($_COOKIE["name"]);
+        $result = dataQuery($query, $param);
+
+        echo 1 == $result ? 'Create event table has been updated. ': 'There has been a problem processing your request, please try again later.';
+    }
 }
 ?>
