@@ -65,7 +65,7 @@
         text-align: center;
     }
 
-    #loginForm {
+    #loginForm, #registerForm {
         width: 80%;
     }
 }
