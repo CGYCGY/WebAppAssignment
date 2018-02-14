@@ -21,7 +21,8 @@
 #page-wrap2 {
     position: relative;
     z-index: 1;
-    width: 1000px;
+    width: 75%;
+    height: auto;
     margin: 50px auto;
     padding: 20px;
     background: #C3F5F7;

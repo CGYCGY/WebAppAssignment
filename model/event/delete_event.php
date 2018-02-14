@@ -3,11 +3,11 @@ include '../database/connect.php';
 
 if(isset($_GET['evid'])) {
 
-    $url = '../view/event_list.html';
+    $url = '../../view/event/event_list.html';
     $eID = $_GET['evid'];
     echo $_GET['evid'];
 
-    $query = 'DELETE FROM `event`WHERE `event_id` = ?';
+    $query = 'DELETE FROM `event` WHERE `event_id` = ?';
     $param = array($eID);
     $result = dataQuery($query, $param);
 

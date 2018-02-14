@@ -13,7 +13,7 @@ include '../database/connect.php';
         $param = array($uname, $event_id);
         $result = dataQuery($query, $param);
 
-        echo 1 == $result ? 'Event ticket applied. Page will be redirect shortly.': 'There has been a problem processing your request, please try again later.';
+        echo 1 == $result ? '<font size=\'14pt\'> Event ticket applied. Page will be redirect shortly.</font>': '<font size=\'14pt\'>There has been a problem processing your request, please try again later.</font>';
         header( "refresh:2;../../view/event/browse.html" );
 
     }

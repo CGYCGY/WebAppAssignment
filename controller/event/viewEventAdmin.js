@@ -39,7 +39,7 @@ $(function () {
                         '\t\t\t  <div class="modal-content">\n' +
                         '\t\t\t\t<span class="close">&times;</span>\n' +
                         '\t\t\t\t<h1>Are you sure you wan to DELETE this event?</h1><br>\n' +
-                        '<form id="eDeleteForm" name="CreateEvent" action='+Number(sessionStorage.getItem("tempEID"))+'"../../model/event/delete_event.php?evid=" method="post" >'+
+                        '<form id="eDeleteForm" name="CreateEvent" action="../../model/event/delete_event.php?evid='+Number(sessionStorage.getItem("tempEID"))+'" method="post" >'+
                         '\t\t\t\t<input type="submit" class="btnlarger" value="YES :( " />\n' +
                         '</form>'+
                         '\t\t\t\t<button class="no, btnlarger">NO! :D</button>\n' +
