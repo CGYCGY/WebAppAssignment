@@ -6,8 +6,17 @@ INSERT INTO `admin` (username, password, first_name, last_name, email_address, t
 INSERT INTO `admin` (username, password, first_name, last_name, email_address, telephone_number) VALUES('bbbbb', '123qweQWE',	'bb', 'bb', 'bb@bb.bb', '012-4567890');
 
 #USER
-INSERT INTO `admin` (username, password, first_name, last_name, email_address, telephone_number) VALUES('ccccc', '123qweQWE',	'cc', 'cc', 'cc@cc.cc', '012-5678903');
-INSERT INTO `admin` (username, password, first_name, last_name, email_address, telephone_number) VALUES('ddddd', '123qweQWE',	'dd', 'dd', 'dd@dd.dd', '012-6789034');
+INSERT INTO `user` (username, password, first_name, last_name, email_address, telephone_number) VALUES('ccccc', '123qweQWE',	'cc', 'cc', 'cc@cc.cc', '012-5678903');
+INSERT INTO `user` (username, password, first_name, last_name, email_address, telephone_number) VALUES('ddddd', '123qweQWE',	'dd', 'dd', 'dd@dd.dd', '012-6789034');
+
+#CREATE_EVENT
+INSERT INTO `create_event` (admin_id, event_id) VALUES(1,1);
+INSERT INTO `create_event` (admin_id, event_id) VALUES(1,2);
+
+#APPLY_TICKET
+INSERT INTO `apply_ticket` (user_id, event_id) VALUES(1,3);
+INSERT INTO `apply_ticket` (user_id, event_id) VALUES(1,4);
+
 
 #EVENT
 #1
