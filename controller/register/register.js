@@ -45,7 +45,6 @@ function validation() {
 
 function validate_username() {
     username = document.getElementById('username').value;
-    console.log(username);
     var checkname = true;
 
     $.ajax({
