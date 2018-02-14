@@ -95,6 +95,7 @@ div.flex_2 {
 input.apply_tix {
     width: 100%;
     padding:3px;
+
     border:2px solid rgba(0, 0, 0, 0.69);
     -webkit-border-radius: 5px;
     border-radius: 10px;
