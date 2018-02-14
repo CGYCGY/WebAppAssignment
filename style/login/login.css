@@ -1,0 +1,39 @@
+
+.loginForm {
+    border: 3px solid deepskyblue;
+    width: 500px;
+    height: 775px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.imgContainer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.detailContainer {
+    font-family: 'Roboto', sans-serif;
+    color: mediumblue;
+    text-align: center;
+}
+
+img.userIcon {
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    float: left;
+    padding-left: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
