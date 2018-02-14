@@ -20,6 +20,10 @@ var nav_c = '<!--navigation bar-->\n' +
     '            </div>\n' +
     '        </div>';
 
+nav_c += '<div class="footer">\n' +
+    'Admin:\n' + Cookies.get("name") +
+    '</div>';
+
 $('.nav_container').html(
     nav_c
 );

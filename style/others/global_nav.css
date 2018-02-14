@@ -14,6 +14,7 @@ div.nav_bar {
 div.nav_bar a {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 div.nav_bar a img {
@@ -100,6 +101,36 @@ div.nav_menu {
 .trans .m3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#bg {
+    position:fixed;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    z-index: -1;
+}
+
+#bg img {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    min-width:50%;
+    min-height:50%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a6a6a6;
+    color: white;
+    text-align: center;
 }
 
 .clear_fix:before, .clear_fix:after { content: ""; display: table; }
