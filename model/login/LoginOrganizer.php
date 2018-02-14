@@ -38,7 +38,7 @@ function alert($msg) {
 }
 
 if(admin_login($username,$password)) {
-    header("Location: ../../view/event_list.html");
+    header("Location: ../../view/event/event_list.html");
 }
 else {
     header("Location: ../../view/login/login.html");

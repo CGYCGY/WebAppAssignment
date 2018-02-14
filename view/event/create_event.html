@@ -7,11 +7,17 @@
 		<meta charset="utf-8">
 		<title>Welcome to create event function.</title>
         <script type="text/javascript" src="../../controller/library/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/connect.js"></script>
-		<link rel="stylesheet" href="css/crenupdevent.css">
+		<script type="text/javascript" src="../../controller/cookie/cookie.js"></script>
+        <script type="text/javascript" src="../../controller/others/connect.js"></script>
+		<script type="text/javascript" src="../../controller/others/menuIcon.js"></script>
+		<link rel="stylesheet" href="../../style/others/global_nav.css" />
+		<link rel="stylesheet" href="../../style/event/cr_up_event.css">
 	</head>
 
 	<body>
+		<div class="nav_container">
+			<script language="javascript" type="text/javascript" src="../../controller/navigation_bar/nav_bar_admin.js"></script>
+		</div>
 
 		<div id="page-wrap1">
         <h2 id="response"></h2>
@@ -20,7 +26,7 @@
 
 		<br>
 
-		<form id="eventForm" name="CreateEvent" action="php/create_event.php" method="post" >
+		<form id="eventForm" name="CreateEvent" action="../../model/event/create_event.php" method="post" >
 			<div>
 			<label> EVENT NAME:*
 				<input type="text" placeholder="MMU Event"
@@ -87,6 +93,16 @@
 			<br>
 			<br>
 
+			<label> ORGANIZER CONTACT: *
+				<input type="text" placeholder="012-3456789"
+					   name="organizerCon"/>
+				(Enter organizer conact/company contact)
+
+			</label>
+
+			<br>
+			<br>
+
 			<!--<h1>2.CREATE TICKETS</h1>-->
 			<!--<h2>Ticket Type:</h2>-->
 			<!--<select title="ticket_type">-->
@@ -117,7 +133,7 @@
 		</div>
 
 		<div id="bg">
-			<img src="resource/backg.jpg" alt="">
+			<img src="../../drawable/backg.jpg" alt="">
 		</div>
 	</body>
 
