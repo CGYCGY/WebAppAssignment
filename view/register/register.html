@@ -22,7 +22,7 @@
 
 <body>
 <div id="registerForm" class="detailContainer">
-    <form method="get" onsubmit="return validation()">
+    <form method="get" onsubmit="return validity.valueOf()">
         <h2>Account Registration</h2>
         <label>
             <span class="fontStyle">User name</span><input type="text" id="username" placeholder="At least 5 characters with only lowercase" name="username" required>
@@ -58,7 +58,7 @@
             <option value="organizer">Admin</option>
         </select>
 
-        <p class="warning_message" id="register_warning"></p>
+        <!--<p class="warning_message" id="register_warning"></p>-->
 
         <button type="submit" id="register">Register</button>
     </form>

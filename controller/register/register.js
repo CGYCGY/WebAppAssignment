@@ -3,8 +3,8 @@ $(function() {
 
 
     $('#register').click(function(){
-        console.log(validation());
         if(validation()) {
+            validity = true;
             registration_choice();
         }
     });
@@ -23,6 +23,7 @@ var last_name;
 var email_address;
 var telephone;
 var role;
+var validity = false;
 
 function validation() {
     var vld_user = validate_username();
@@ -32,7 +33,7 @@ function validation() {
     var vld_telephone = validate_telephone();
     var list = [vld_user, vld_password, vld_name, vld_email, vld_telephone];
 
-    console.log(vld_user + " " + vld_password + " " + vld_name + " " + vld_email + " " + vld_telephone);
+    console.log(validity.valueOf());
 
     for (i = 0; i < list.length; i++){
         if (!list[i]){
@@ -67,10 +68,11 @@ function validate_username() {
 
     if(!username_regex.test(username)){
         $('#register_warning').text('The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters.').show();
+        window.alert('The username shall contain at least 5 characters long with lowercase letter and maximum 50 characters.');
         return false;
     }
     else if(!checkname) {
-        $('#register_warning').text('The username already exist, please choose another username.').show();
+        window.alert('The username already exist, please choose another username.');
         return false;
     }
     else {
@@ -85,15 +87,14 @@ function validate_password() {
     var bln_pw = password_regex.test(password);
 
     if(!bln_pw){
-        $('#register_warning').text('The password shall contain at least eight characters long with uppercase, lowercase and numbers. ').show();
+        window.alert('The password shall contain at least eight characters long with uppercase, lowercase and numbers. ');
         return false;
     }
     else if (password !== retype_pw) {
-        $('#register_warning').text('The retype password does not match with previous password value').show();
+        window.alert('The retype password does not match with previous password value');
         return false;
     }
     else if (bln_pw && password === retype_pw){
-        $('#register_warning').hide();
         return true;
     }
 }
@@ -107,15 +108,14 @@ function validate_name() {
     var bln_lname = name_regex.test(last_name);
 
     if(!bln_fname){
-        $('#register_warning').text('The first name should only have alphabets.').show();
+        window.alert('The first name should only have alphabets.');
         return false;
     }
     else if (!bln_lname){
-        $('#register_warning').text('The last name should only have alphabets.').show();
+        window.alert('The last name should only have alphabets.');
         return false;
     }
     else if (bln_fname && bln_lname){
-        $('#register_warning').hide();
         return true;
     }
 }
@@ -125,11 +125,10 @@ function validate_email() {
     var bln_email = email_regex.test(email_address);
 
     if(!bln_email){
-        $('#register_warning').text('The email should be correct format.').show();
+        window.alert('The email should be correct format.');
         return false;
     }
     else {
-        $('#register_warning').hide();
         return true;
     }
 }
@@ -139,11 +138,10 @@ function validate_telephone() {
     var bln_telephone = telephone_regex.test(telephone);
 
     if(!bln_telephone){
-        $('#register_warning').text('The telephone should be correct format.').show();
+        window.alert('The telephone should be correct format.');
         return false;
     }
     else {
-        $('#register_warning').hide();
         return true;
     }
 }
