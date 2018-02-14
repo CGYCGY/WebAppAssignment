@@ -86,14 +86,13 @@ p {
     max-width: 100%;
     height: auto;
     width: auto;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 
 .opacity img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-    cursor: pointer;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
 }
 
 .modal {
