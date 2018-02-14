@@ -28,11 +28,6 @@
     padding: 0;
 }
 
-ul{
-    font: 15px/2 Georgia, Arial, Serif;
-    margin: 15px 0 30px 30px;
-}
-
 nav {
     float: right;
     max-height: 500px;
@@ -151,4 +146,9 @@ p {
 
 .link_button:visited {
     color: blue;
+}
+
+/*hotfix*/
+div.nav_bar a img {
+    height: 30px;
 }
