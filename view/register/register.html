@@ -10,17 +10,19 @@
     <link rel="stylesheet" type="text/css" href="../../style/app/app.css">
     <link rel="stylesheet" type="text/css" href="../../style/register/register.css">
 
+    <!--stylesheet-->
+    <link rel="stylesheet" href="../../style/others/responsive.css" media="screen and (max-width: 900px)" />
+
     <!--Use Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Questrial|Roboto" rel="stylesheet">
+    <link href="../../style/library/Dancing+Script-Questrial-Roboto(google).css" rel="stylesheet">
 
     <!--Use Google CDN Jquery script for easier integration test -->
     <script type="text/javascript" src="../../controller/library/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../controller/register/register.js"></script>
 
 <body>
-
-<form method="get" id="registerForm" onsubmit="return validation()">
-    <div class="detailContainer">
+<div id="registerForm" class="detailContainer">
+    <form method="get" onsubmit="return validation()">
         <h2>Account Registration</h2>
         <label>
             <span class="fontStyle">User name</span><input type="text" id="username" placeholder="At least 5 characters with only lowercase" name="username" required>
@@ -59,8 +61,14 @@
         <p class="warning_message" id="register_warning"></p>
 
         <button type="submit" id="register">Register</button>
-    </div>
-</form>
+    </form>
+
+    <form action="../login/login.html">
+        <br>
+        <span class="fontStyle">Already have an account? </span>
+        <button type="submit">Login</button>
+    </form>
+</div>
 
 </body>
 </html>

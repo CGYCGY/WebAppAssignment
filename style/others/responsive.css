@@ -61,7 +61,19 @@
         text-align: center;
     }
 
-    .evt_box_left, .evt_box_right{
+    .evt_box_left, .evt_box_right {
         text-align: center;
     }
+
+    #loginForm, #registerForm {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #page-wrap1 {
+        width: 80%;
+    }
+
+
 }

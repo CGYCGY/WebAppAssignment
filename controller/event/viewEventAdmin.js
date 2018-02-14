@@ -50,7 +50,7 @@ $(function () {
 
                     tempString += '\t\t\t<!--Left Side of div-->\n' +
                         '\t\t\t<div class="evt_box_left">\n' +
-                        '\t\t\t<br><div class="opacity"><img alt="Event Pic" src="https://vignette.wikia.nocookie.net/camphalfbloodroleplay/images/0/05/Doge.png"></div><br>\n' +
+                        '\t\t\t<br><div class="opacity"><img alt="Event Pic" src="../../drawable/testpic.jpg"></div><br>\n' +
                         '\n' +
                         '\t\t\t<!--Event Description-->\n' +
                         '\t\t\t<h2 class="arial">EVENT DESCRIPTION</h2><br>\n' +

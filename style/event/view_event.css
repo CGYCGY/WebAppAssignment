@@ -28,11 +28,6 @@
     padding: 0;
 }
 
-ul{
-    font: 15px/2 Georgia, Arial, Serif;
-    margin: 15px 0 30px 30px;
-}
-
 nav {
     float: right;
     max-height: 500px;
@@ -86,14 +81,13 @@ p {
     max-width: 100%;
     height: auto;
     width: auto;
-    opacity: 0.7;
-    filter: alpha(opacity=50);
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 
 .opacity img:hover {
-    opacity: 1.0;
-    filter: alpha(opacity=100);
-    cursor: pointer;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
 }
 
 .modal {
@@ -152,4 +146,9 @@ p {
 
 .link_button:visited {
     color: blue;
+}
+
+/*hotfix*/
+div.nav_bar a img {
+    height: 30px;
 }

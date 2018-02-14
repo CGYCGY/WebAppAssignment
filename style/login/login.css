@@ -1,5 +1,5 @@
 
-.loginForm {
+#loginForm {
     border: 3px solid deepskyblue;
     width: 500px;
     height: 775px;
@@ -10,12 +10,6 @@
 .imgContainer {
     text-align: center;
     padding-bottom: 10px;
-}
-
-.detailContainer {
-    font-family: 'Roboto', sans-serif;
-    color: mediumblue;
-    text-align: center;
 }
 
 img.userIcon {

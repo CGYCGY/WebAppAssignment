@@ -131,6 +131,7 @@ div.nav_menu {
     background-color: #a6a6a6;
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 .clear_fix:before, .clear_fix:after { content: ""; display: table; }
