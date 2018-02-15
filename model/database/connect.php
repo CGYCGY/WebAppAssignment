@@ -7,8 +7,8 @@ function dataQuery($query, $param) {
     $hostname = "localhost";
     $dbname = "waadb";
     $user = "root";
-    $pass = "root";
-//    $pass = "";
+//    $pass = "root";
+    $pass = "";
 
     // type of query
     $query_type = explode(' ', $query);
