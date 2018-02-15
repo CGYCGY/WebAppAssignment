@@ -14,3 +14,12 @@
     border-radius: 30px;
 }
 
+.link{
+    cursor:pointer;
+    color: blue;
+}
+
+.link:visited{
+    color: blue;
+}
+
