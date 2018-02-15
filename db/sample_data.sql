@@ -12,6 +12,10 @@ INSERT INTO `user` (username, password, first_name, last_name, email_address, te
 #CREATE_EVENT
 INSERT INTO `create_event` (admin_id, event_id) VALUES(1,1);
 INSERT INTO `create_event` (admin_id, event_id) VALUES(1,2);
+INSERT INTO `create_event` (admin_id, event_id) VALUES(1,3);
+INSERT INTO `create_event` (admin_id, event_id) VALUES(1,4);
+INSERT INTO `create_event` (admin_id, event_id) VALUES(2,5);
+INSERT INTO `create_event` (admin_id, event_id) VALUES(2,6);
 
 #APPLY_TICKET
 INSERT INTO `apply_ticket` (user_id, event_id) VALUES(1,3);
