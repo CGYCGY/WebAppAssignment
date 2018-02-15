@@ -30,7 +30,7 @@ INSERT INTO `event` (`event_name`, `event_description`, `event_location`, `event
 Following the, 1.5km, 3km, 6km and 10km Run course in  Cyberjaya, runners will approach Chocolate Stations offering a variety of Chocolate Treats along the route. On finishing the course, runners will receive a Chocolate Medal and a Finisher’s Bowl filled with chocolate drink, chocolate fondue and tasty dippable treats! leaving participants with sweet memories and enjoyable experience.', 'Taman Tasik Cyberjaya Community Club', 'Knightscape', '2018-01-31 06:00:00', '2018-01-31 20:00:00');
 
 #2
-INSERT INTO `event` (`event_name`, `event_description`, `event_location`, `event_org_name`, `event_dt_start`, `event_dt_end`) VALUES ('INOV8 Trail Run Trail Series 2018', 'This is it, our third year into the raw world of trail running. To be held in Bukit Merah Lake Town Resort for Series 1 and Semenyih for Series 2. Trail Runners, unite as we venture into the world of dirty.', 'Bukit Merah Lake Town Resort (Series 1)
+INSERT INTO `event` (`event_name`, `event_description`, `event_location`, `event_org_name`, `event_dt_start`, `event_dt_end`) VALUES ('INOV8 Trail Run Trail Series 2018', 'This is it, our third year into the raw world of trail running. To be held in Bukit Merah Lake Town Resort for Series 1 and Semenyih for Series 2. Trail Runners, unite as we venture into the world of dirty.', 'Bukit Merah Lake Town Resort (Series 1),
 Semenyih Eco Venture Resort (Series 2)', 'Cyclic Sport', '2018-04-14 07:30:00', '2018-04-14 19:30:00');
 
 #3
