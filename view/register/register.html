@@ -22,8 +22,8 @@
     <script type="text/javascript" src="../../controller/register/register.js"></script>
 
 <body>
-<div id="registerForm" class="detailContainer">
-    <form method="get" onsubmit="return validity.valueOf()">
+<div class="detailContainer">
+    <form id="registerForm" method="get" onsubmit="return validity.valueOf()">
         <h2>Account Registration</h2>
         <label>
             <span class="fontStyle">User name</span><input type="text" id="username" placeholder="At least 5 characters with only lowercase" name="username" required>
@@ -62,13 +62,10 @@
         <!--<p class="warning_message" id="register_warning"></p>-->
 
         <button type="submit" id="register">Register</button>
-    </form>
 
-    <!--<form action="../login/login.html">-->
         <br>
         <span class="fontStyle">Already have an account? <a class="link" href="../login/login.html">Login</a></span>
-        <!--<button type="submit">Login</button>-->
-    <!--</form>-->
+    </form>
 </div>
 
 </body>
