@@ -20,6 +20,8 @@ INSERT INTO `create_event` (admin_id, event_id) VALUES(2,6);
 #APPLY_TICKET
 INSERT INTO `apply_ticket` (user_id, event_id) VALUES(1,3);
 INSERT INTO `apply_ticket` (user_id, event_id) VALUES(1,4);
+INSERT INTO `apply_ticket` (user_id, event_id) VALUES(2,3);
+INSERT INTO `apply_ticket` (user_id, event_id) VALUES(2,4);
 
 
 #EVENT
